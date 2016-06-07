@@ -1,7 +1,10 @@
-h1 {
+#wrapper {
     text-align: center;
+    background-color: rgb(18, 27, 27);
 }
-
-iframe {
-    display: block;
+h1 {
+    color: rgb(111, 147, 151);
+}
+#wrapper iframe {
+    display: inline-block;
 }
