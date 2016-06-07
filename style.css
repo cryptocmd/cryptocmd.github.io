@@ -3,5 +3,5 @@ h1 {
 }
 
 iframe {
-    align-content: center;
+    display: block;
 }
