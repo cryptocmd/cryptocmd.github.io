@@ -7,8 +7,10 @@ body {
     background-color: rgb(18, 27, 27);
 }
 div {
-    text-align: center;
     background-color: rgb(18, 27, 27);
+}
+div#reddit {
+    text-align: left;
 }
 h1 {
     color: rgb(111, 147, 151);
