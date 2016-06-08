@@ -9,8 +9,16 @@ body {
 div {
     background-color: rgb(18, 27, 27);
 }
-div#reddit {
+#reddit-wrapper {
+    display: flex;
+}
+#reddit-ethtrader {
+    width: 50%;
     text-align: left;
+}
+#reddit-ethereum {
+    text-align: left;
+    width: 50%;
 }
 h1 {
     color: rgb(111, 147, 151);
