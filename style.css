@@ -26,3 +26,7 @@ h1 {
 #wrapper iframe {
     display: inline-block;
 }
+#chart-container {
+    width: 100%;
+    height: 400px;
+}
