@@ -1,6 +1,6 @@
 var chart = new cryptowatch.Embed('poloniex', 'ethbtc', {
-	timePeriod: '1d',
-	width: 650,
+	timePeriod: '15m',
+	// width: 650,
 	customColorScheme: {
 		bg:           "000000",
 		text:         "b2b2b2",
