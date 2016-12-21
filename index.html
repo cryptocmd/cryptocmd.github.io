@@ -20,7 +20,11 @@
   			ga('send', 'pageview');
 
 		</script>
-		
+		<script type="text/javascript">
+			function refresh_stuff(){
+				$('#reddit-wrapper').load(location.href + " #reddit-wrapper");
+            }
+  		</script>
 	</head>
 	<body>
 		<div class="section">
@@ -39,34 +43,16 @@
 				</div>
 			</div>
 		</div>
+		<div class="container" id="div-button">
+				<button type="button" class="btn btn-primary" onclick="refresh_stuff()">REFRESH</button>
+			</div>
 		<div class="container" id="reddit-wrapper">
 			<div class="col-lg-6" id="reddit-ethtrader">
 				<script src="https://ethtrader.reddit.com/hot/.embed?limit=10&t=all" type="text/javascript"></script>
 			</div>
 			<div class="col-lg-6" id="reddit-ethereum">
-				<script src="https://ethereum.reddit.com/hot/.embed?limit=10&t=all" type="text/javascript"></script>
+				<script src="https://ethereum.reddit.com/hot/.embed?limit=10&t=all" type="text/javascript" ></script>
 			</div>
 		</div>
-		<script type="text/javascript">
-			// function update() {
-			// 	$.get("reddit_div.html", function(data) {
-			// 		$("#reddit-wrapper").html(data);
-			// 		window.setTimeout(update, 20000);
-			// 	});
-			// }
-			function refresh_stuff(){
-				var container1 = document.getElementById("reddit-ethtrader");
-				var content1 = container1.innerHTML;
-				container1.innerHTML = content1;
-
-				var container2 = document.getElementById("reddit-ethereum");
-				var content2 = container2.innerHTML;
-				container2.innerHTML = content2;
-            }
-			window.setInterval(function() {
-				refresh_stuff();
-				// console.log("refreshed functions");
-			}, 60000);
-  		</script>
 	</body>
 </html>
