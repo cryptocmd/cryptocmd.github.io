@@ -21,10 +21,12 @@
 
 		</script>
 		<script type="text/javascript">
-    		setInterval("my_function();",30000); 
-    		function my_function(){
-      			$('#reddit-wrapper').load(location.href + ' #reddit-ethtrader');
-    		}
+			function update() {
+				$.get("reddit_div.html", function(data) {
+					$("#reddit-wrapper").html(data);
+					window.setTimeout(update, 20000);
+				});
+			}
   		</script>
 	</head>
 	<body>
