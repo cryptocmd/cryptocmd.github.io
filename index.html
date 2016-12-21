@@ -20,11 +20,6 @@
   			ga('send', 'pageview');
 
 		</script>
-		<script type="text/javascript">
-			function refresh_stuff(){
-				$('#reddit-wrapper').load(location.href + " #reddit-wrapper");
-            }
-  		</script>
 	</head>
 	<body>
 		<div class="section">
@@ -43,9 +38,6 @@
 				</div>
 			</div>
 		</div>
-		<div class="container" id="div-button">
-				<button type="button" class="btn btn-primary" onclick="refresh_stuff()">REFRESH</button>
-			</div>
 		<div class="container" id="reddit-wrapper">
 			<div class="col-lg-6" id="reddit-ethtrader">
 				<script src="https://ethtrader.reddit.com/hot/.embed?limit=10&t=all" type="text/javascript"></script>

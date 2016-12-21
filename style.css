@@ -9,10 +9,6 @@ body {
 div {
     background-color: rgb(18, 27, 27);
 }
-#div-button {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
 #reddit-wrapper {
     display: flex;
 }
