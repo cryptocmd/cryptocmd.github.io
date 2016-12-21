@@ -20,6 +20,12 @@
   			ga('send', 'pageview');
 
 		</script>
+		<script type="text/javascript">
+    		setInterval("my_function();",5000); 
+    		function my_function(){
+      			$('#reddit-wrapper').load(location.href + ' #reddit-wrapper');
+    		}
+  		</script>
 	</head>
 	<body>
 		<div class="section">
