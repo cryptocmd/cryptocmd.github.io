@@ -20,14 +20,7 @@
   			ga('send', 'pageview');
 
 		</script>
-		<script type="text/javascript">
-			function update() {
-				$.get("reddit_div.html", function(data) {
-					$("#reddit-wrapper").html(data);
-					window.setTimeout(update, 20000);
-				});
-			}
-  		</script>
+		
 	</head>
 	<body>
 		<div class="section">
@@ -54,5 +47,26 @@
 				<script src="https://ethereum.reddit.com/hot/.embed?limit=10&t=all" type="text/javascript"></script>
 			</div>
 		</div>
+		<script type="text/javascript">
+			// function update() {
+			// 	$.get("reddit_div.html", function(data) {
+			// 		$("#reddit-wrapper").html(data);
+			// 		window.setTimeout(update, 20000);
+			// 	});
+			// }
+			function refresh_stuff(){
+				var container1 = document.getElementById("reddit-ethtrader");
+				var content1 = container1.innerHTML;
+				container1.innerHTML = content1;
+
+				var container2 = document.getElementById("reddit-ethereum");
+				var content2 = container2.innerHTML;
+				container2.innerHTML = content2;
+            }
+			window.setInterval(function() {
+				refresh_stuff();
+				// console.log("refreshed functions");
+			}, 60000);
+  		</script>
 	</body>
 </html>
